@@ -407,7 +407,7 @@ In general, you will receive these types of responses:
 | 403 | Forbidden | The web service validated your authentication information, but you don't have user access to the requested resource. |
 | 404 | Not Found | The server could not find your request. |
 | 405 | Method Not Allowed | The HTTP method you requested is not allowed for the specified URL. |
-| 406 | Not Acceptable | The web service doesn't support the content type you requested. |
+| 406 | Not Acceptable | The web service doesn't support the representation content type you requested. |
 | 409 | Conflict | You implemented resource versioning, but your request conflicts with the current state. |
 | 410 | Gone | The web service no longer supports the API version you requested, or the resource you requested no longer exists. |
 | 500 | Internal Server Error | The server could not complete your request. Please contact technical support for assistance at [APIsupport@xyzcompany.com](email:APIsupport@xyzcompany.com). |
