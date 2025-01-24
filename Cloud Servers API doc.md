@@ -13,13 +13,11 @@ Welcome to the Application Programming Interface (API) documentation for your XY
   - [Getting Started](#getting-started)
     - [API Requirements](#api-requirements)
     - [Authentication](#authentication)
-      - [Authentication Example](#authentication-example)
     - [Generating an API Key](#generating-an-api-key)
 - [API Reference](#api-reference)
     - [Enpdoint Definitions](#endpoint-definitions)
   - [Requests](#requests)
     - [Query Operations](#query-operations)
-      - [Filtering](#filtering)
     - [Read Operations](#read-operations)
     - [Create Operations](#create-operations)
     - [Update Operations](#update-operations)
@@ -70,9 +68,7 @@ HTTP basic authorization appends your access key with a colon and concatenates y
 
 <br/>
 
-<a id="auth-example">
-
-#### Authentication Example</a>
+#### Authentication Example
 
 ```Javascript
 accessKey = "your-access-key"
@@ -180,8 +176,6 @@ This section provides information about the API requests you can make. The follo
 
 A query operation displays all of the resources in a collection. A GET request on the base URL returns the collection of resources for that API version.
 
-<br/>
-
 **Example Request**
 
 ```Javascript
@@ -189,8 +183,6 @@ GET /v1/folders HTTP/1.1
 Accept: application/json
 ...
 ```
-
-<br/>
 
 **Example Response**
 
@@ -224,11 +216,7 @@ Content-Type: application/json
 }
 ```
 
-<br/>
-
-<a id="filtering">
-
-#### Filtering</a>
+#### Filtering
 
 The schema of a collection indicates whether filtering is supported. If a collection supports filtering, its response has a "filter" object and an attribute for each field you can filter. If you applied a filter to a field, the value is an array that describes the filter. If you did not apply a filter, the value is null. You can combine filters with "AND," but not "OR."
 
@@ -278,15 +266,11 @@ In addition, if a collection supports filtering, its documentation includes a ta
 
 Use read operations to display a single resource in a collection.
 
-<br/>
-
-<a id="API-versions">
-
-#### API Versions</a>
+#### API Versions
 
 Use a GET requeest on the base URL to return a colletion of API version resources. A GET request on the base URL of a particular API version returns a resource that contains links to all available resources.
-
-<br />
+ 
+ <br/>
 
 **Example Request**
 
@@ -294,8 +278,6 @@ Use a GET requeest on the base URL to return a colletion of API version resource
 GET /v1 HTTP/1.1
 ...
 ```
-
-<br/>
 
 **Example Response**
 
@@ -315,11 +297,11 @@ Content-Type: application/json
 ```
 <br/>
 
-<a id="single-resource">
-
-#### Single Resource</a>
+#### Single Resource
 
 Use a GET request on the URL of a single resource to return a representation of that resource.
+
+<br/>
 
 **Example Request**
 
@@ -327,8 +309,6 @@ Use a GET request on the URL of a single resource to return a representation of 
 GET /v1/files/blb2e7006be HTTP/1.1
 ...
 ```
-
-<br/>
 
 **Example Response**
 
