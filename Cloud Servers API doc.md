@@ -176,6 +176,8 @@ This section provides information about the API requests you can make. The follo
 
 A query operation displays all of the resources in a collection. A GET request on the base URL returns the collection of resources for that API version.
 
+<br/>
+
 **Example Request**
 
 ```Javascript
@@ -215,6 +217,8 @@ Content-Type: application/json
   }
 }
 ```
+
+<br/>
 
 #### Filtering
 
