@@ -6,7 +6,6 @@ lang: en
 ---
 
 # XYZ Cloud Servers API Documentation
----
 
 Welcome to the Application Programming Interface (API) documentation for your XYZ Cloud Servers account! You can use this API to program virtually any task you can perform in your account's control panel, including management of your IP addresses, networks, network rules, backups, and virtual machines.
 
@@ -120,7 +119,6 @@ To delete an existing API key, click **Make inactive**.
 <a id="api-reference">
 
 # API Reference</a>
----
 
 This API reference contains detailed information about the methods, URLs, request types, response codes, and fields for each operation. It also includes examples of JSON requests and responses.
 
@@ -257,6 +255,7 @@ In addition, if a collection supports filtering, its documentation includes a ta
 <br/>
 
 **Example Response**
+
 ```Javascript
 {
   /*...*/
@@ -332,6 +331,7 @@ GET /v1/files/blb2e7006be HTTP/1.1
 <br/>
 
 **Example Response**
+
 ```Javascript
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -380,6 +380,7 @@ Content-Type: application/json
 <a id="responses">
 
 ## Responses</a>
+
 You will receive an HTTP response for each request you make. The responses contain status codes that indicate the results of your requests.
 
 In general, you will receive these types of responses:
@@ -411,12 +412,3 @@ In general, you will receive these types of responses:
 | 410 | Gone | The web service no longer supports the API version you requested, or the resource you requested no longer exists. |
 | 500 | Internal Server Error | The server could not complete your request. Please contact technical support for assistance at [APIsupport@xyzcompany.com](email:APIsupport@xyzcompany.com). |
 | 503 | Service Unavailable | The web service is temporarily unavailable due to maintenance or server overload. Please try your request again later. |
-
-
-
-
-
-
-
-
-
