@@ -10,15 +10,22 @@ lang: en
 Welcome to the Application Programming Interface (API) documentation for your XYZ Cloud Servers account! You can use this API to program virtually any task you can perform in your account's control panel, including management of your IP addresses, networks, network rules, backups, and virtual machines.
 
 - [XYZ Cloud Servers API Documentation](#xyz-cloud-servers-api-documentation)
+  - [Overview](#overview)
+    - [Quick Start](#quick-start)
+    - [Definitions](#definitions)
   - [Getting Started](#getting-started)
     - [API Requirements](#api-requirements)
     - [Authentication](#authentication)
+      - [Authentication Example](#authentication-example)
     - [Generating an API Key](#generating-an-api-key)
 - [API Reference](#api-reference)
-    - [Enpdoint Definitions](#endpoint-definitions)
+    - [Endpoint Definitions](#endpoint-definitions)
   - [Requests](#requests)
     - [Query Operations](#query-operations)
+      - [Filtering](#filtering)
     - [Read Operations](#read-operations)
+      - [API Versions](#api-versions)
+      - [Single Resource](#single-resource)
     - [Create Operations](#create-operations)
     - [Update Operations](#update-operations)
     - [Delete Operations](#delete-operations)
@@ -27,15 +34,41 @@ Welcome to the Application Programming Interface (API) documentation for your XY
 
 <br/>
  
+<a id="overview">
+
+## Overview</a>
+
+This documentation is intended for developers who want to use the XYZ Cloud Servers API. Based on REST (Representational State Transfer) prinicples, our dynamic web service makes it easy to navigate to resources and program tasks.
+
+A REST web service is a user-friendly style of API in which you use HTTP (Hypertext Transfer Protocol) requests to manipulate resources on a server. RESTful services are stateless, meaning the server does not store session states on the server between requests.
+
+<br/>
+ 
+ <a id="quick-start">
+
+### Quick Start</a>
+
+Starting from the [base URL](#getting-started), you can [authenticate](#authentication) and then navigate through the API resources in a web browser (also known as the HTML view of the API) and know which options are available. You can pick which REST client (if any) and programming language you want to use to interact with the API.
+
+<br/>
+ 
+ <a id="definitions">
+
+### Definitions</a>
+
+*Coming soon.*
+
+<br/>
+ 
 <a id="getting-started-">
 
 ## Getting Started</a>
 
-This documentation is intended for developers using the XYZ API. Based on REST (Representation State Transfer) principles, our dynamic web service makes it easy to navigate to resources and program tasks.
-
-From the base URL, you can authenticate and navigate through the API resources in a web browser. For the HTML view of the API, go to [https://api.xyzcloudservers.net/vi/](https://api.xyzcloudservers.net/vi/).
-
 To get started, review the [requirements](#requirements") and generate an [API key](#generating-an-api-key). 
+
+>[!NOTE] 
+>You can authenticate and navigate through the API resources in a web browser from the **base URL**:
+[https://api.xyzcloudservers.net/vi/](https://api.xyzcloudservers.net/vi/).
 
  <br/>
  
@@ -110,7 +143,7 @@ To generate another API key, repeat steps 4 through 6.
 
 To delete an existing API key, click **Make inactive**.
 
-<br/>
+<br/><br/>
 
 <a id="api-reference">
 
@@ -118,9 +151,8 @@ To delete an existing API key, click **Make inactive**.
 
 This API reference contains detailed information about the methods, URLs, request types, response codes, and fields for each operation. It also includes examples of JSON requests and responses.
 
-<br/>
-
 <a id="endpoint-definitions">
+<br/>
 
 ### Endpoint Definitions</a>
 
