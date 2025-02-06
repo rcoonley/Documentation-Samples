@@ -3,9 +3,9 @@ This repository contains my technical writing samples.
 
 ## Online Help
 
-[Database Software Help](https://www.upwork.com/freelancers/~01d4b301a7bed1ca78?p=1858691676559450112)
+[Database Software Help](https://help.claris.com/archive/help/10/fmp/en/index.html)
 
-I wrote about 2,000 webpages of online help for the FileMaker 10 database software product.
+I wrote about 2,000 webpages of online help for the FileMaker 10 Pro/Advanced database software product. Help topics included how to create databases, share data, use scripts and functions, and more. 
 
 ## REST API Documentation 
 
