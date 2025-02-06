@@ -9,70 +9,47 @@ lang: en
 
 Welcome to the Application Programming Interface (API) documentation for your XYZ Cloud Servers account! You can use this API to program virtually any task you can perform in your account's control panel, including management of your IP addresses, networks, network rules, backups, and virtual machines.
 
-- [XYZ Cloud Servers API Documentation](#xyz-cloud-servers-api-documentation)
-  - [Overview](#overview)
-    - [Quick Start](#quick-start)
-    - [Definitions](#definitions)
-  - [Getting Started](#getting-started)
-    - [API Requirements](#api-requirements)
-    - [Authentication](#authentication)
-      - [Authentication Example](#authentication-example)
-    - [Generating an API Key](#generating-an-api-key)
-- [API Reference](#api-reference)
-    - [Endpoint Definitions](#endpoint-definitions)
-  - [Requests](#requests)
-    - [Query Operations](#query-operations)
-      - [Filtering](#filtering)
-    - [Read Operations](#read-operations)
-      - [API Versions](#api-versions)
-      - [Single Resource](#single-resource)
-    - [Create Operations](#create-operations)
-    - [Update Operations](#update-operations)
-    - [Delete Operations](#delete-operations)
-    - [Action Operations](#action-operations)
-  - [Responses](#responses)
+ - [Getting Started](#getting-started)
+   - [API Requirements](#api-requirements)
+   - [Generating an API Key](#generating-an-api-key)
+   - [Authentication](#authentication)
+     - [Authentication Example](#authentication-example)
+   - [Definitions](#definitions)
+   - [Quick Start](#quick-start)
+ [API Reference](#api-reference)
+   - [Endpoints](#endpoints)
+   - [Requests](#requests)
+     - [Query Operations](#query-operations)
+       - [Filtering](#filtering)
+     - [Read Operations](#read-operations)
+       - [API Versions](#api-versions)
+       - [Single Resource](#single-resource)
+     - [Create Operations](#create-operations)
+     - [Update Operations](#update-operations)
+     - [Delete Operations](#delete-operations)
+     - [Action Operations](#action-operations)
+   - [Responses](#responses)
 
 <br/>
  
-<a id="overview">
+<a id="getting-started">
 
-## Overview</a>
+## Getting Started</a>
 
 This documentation is intended for developers who want to use the XYZ Cloud Servers API. Based on REST (Representational State Transfer) prinicples, our dynamic web service makes it easy to navigate to resources and program tasks.
 
 A REST web service is a user-friendly style of API in which you use HTTP (Hypertext Transfer Protocol) requests to manipulate resources on a server. RESTful services are stateless, meaning the server does not store session states on the server between requests.
 
-<br/>
- 
- <a id="quick-start">
 
-### Quick Start</a>
-
-Starting from the [base URL](#getting-started), you can [authenticate](#authentication) and then navigate through the API resources in a web browser (also known as the HTML view of the API) and know which options are available. You can pick which REST client (if any) and programming language you want to use to interact with the API.
-
-<br/>
- 
- <a id="definitions">
-
-### Definitions</a>
-
-*Coming soon.*
-
-<br/>
- 
-<a id="getting-started-">
-
-## Getting Started</a>
-
-To get started, review the [requirements](#requirements") and generate an [API key](#generating-an-api-key). 
+To get started, review the [requirements](#api-requirements), generate an [API key](#generating-an-api-key), and then [authenticate](#authentication).
 
 >[!NOTE] 
->You can authenticate and navigate through the API resources in a web browser from the **base URL**:
+>**BASE URL:** You can navigate through the API resources in a web browser from:
 [https://api.xyzcloudservers.net/vi/](https://api.xyzcloudservers.net/vi/).
 
  <br/>
- 
- <a id="requirements">
+
+ <a id="api-requirements">
 
 ### API Requirements</a>
 
@@ -91,33 +68,6 @@ In addition, you might want to have:
 
 <br/>
 
-<a id="authentication">
-
-### Authentication</a>
-
-Before you can use the XYZ Cloud Servers API, you must generate an API key to validate your requests. An API key consists of an access key (username) anda secret key (password). Each time you send a request to the server, The web service uses HTTP basic authentication to securely pass your credentials over HTTP, use HTTPS with SSL on **TCP port 443**.
-
-HTTP basic authorization appends your access key with a colon and concatenates your secret key before transmission. Then it uses the Base64 algorithm to encode the resulting string. The HTTP header tranmits the encoded string, and the web service reads and validates it.
-
-<br/>
-
-#### Authentication Example
-
-```Javascript
-accessKey = "your-access-key"
-secretKey = "your-secret-key"
-inputString = accessKey + ":" + secretKey // "your-access-key:your-secret-key"
-base64 = base64_encode(inputString); // "eW91ci1hY2N1c3Mta2V50nlvdXItc2VjcmV0LWtle/q=="
-authorizationHeader = "Basic" + base64; // "Basic eW91ci1hY2N1c3Mta2V50nlvdXItc2VjcmV0LWtleQ=="
-```
-
-All request headers should contain authorization.
-
-```Javascript
-Authorization: Basic eW91ci1hY2N1c3Mta2V50nlvdXItc2VjcmV0LWtleQ==
-```
- <br/>
- 
  <a id="generating-an-api-key">
 
 ### Generating an API Key</a>
@@ -143,7 +93,50 @@ To generate another API key, repeat steps 4 through 6.
 
 To delete an existing API key, click **Make inactive**.
 
-<br/><br/>
+<br/>
+<a id="authentication">
+
+### Authentication</a>
+
+Before you can use the XYZ Cloud Servers API, you must generate an API key to validate your requests. An API key consists of an access key (username) anda secret key (password). Each time you send a request to the server, the web service uses HTTP basic authentication to securely pass your credentials over HTTP, use HTTPS with SSL on **TCP port 443**.
+
+HTTP basic authorization appends your access key with a colon and concatenates your secret key before transmission. Then it uses the Base64 algorithm to encode the resulting string. The HTTP header tranmits the encoded string, and the web service reads and validates it.
+
+#### Authentication Example
+
+```Javascript
+accessKey = "your-access-key"
+secretKey = "your-secret-key"
+inputString = accessKey + ":" + secretKey // "your-access-key:your-secret-key"
+base64 = base64_encode(inputString); // "eW91ci1hY2N1c3Mta2V50nlvdXItc2VjcmV0LWtle/q=="
+authorizationHeader = "Basic" + base64; // "Basic eW91ci1hY2N1c3Mta2V50nlvdXItc2VjcmV0LWtleQ=="
+```
+
+All request headers should contain authorization.
+
+```Javascript
+Authorization: Basic eW91ci1hY2N1c3Mta2V50nlvdXItc2VjcmV0LWtleQ==
+```
+ <br/>
+
+
+<a id="definitions">
+
+### Definitions</a>
+
+*Coming soon.*
+
+<br/>
+
+<a id="quick-start">
+
+### Quick Start</a>
+
+Starting from the [base URL](#getting-started), you can [authenticate](#authentication) and then navigate through the API resources in a web browser (also known as the HTML view of the API) and know which options are available. You can pick which REST client (if any) and programming language you want to use to interact with the API.
+
+<br/>
+
+<br/>
 
 <a id="api-reference">
 
@@ -151,14 +144,12 @@ To delete an existing API key, click **Make inactive**.
 
 This API reference contains detailed information about the methods, URLs, request types, response codes, and fields for each operation. It also includes examples of JSON requests and responses.
 
-<a id="endpoint-definitions">
+<a id="endpoints">
 <br/>
 
-### Endpoint Definitions</a>
+### Endpoints</a>
 
-API endpoints are URLs you can use to access functions and resources. 
-
-Refer to this table for definitions of the terms the API endpoints use.
+API endpoints are URLs you can use to access functions and resources. Refer to Table 1 for definitions of the terms the API endpoints use.
 
 <br/>
 
