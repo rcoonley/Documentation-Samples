@@ -1,4 +1,4 @@
-no# Documentation-Samples
+# Documentation-Samples
 This repository contains my technical writing samples.
 
 ## Online Help
