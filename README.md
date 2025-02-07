@@ -1,5 +1,5 @@
 # Documentation-Samples
-This repository contains my technical writing samples.
+This repository contains some of my technical writing samples.
 
 ## Online Help
 
