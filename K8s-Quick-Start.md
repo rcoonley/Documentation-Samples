@@ -32,8 +32,7 @@ To begin, you'll need to install a [supported version of Docker]({{site.baseurl}
 
 It only takes one command and a few minutes to install and launch Rancher Server. Once installed, you can open a web browser to access the Rancher UI.
 
-> ####Note:
-> We recommend configuring [access control](http://rancher.com/docs/rancher/v1.6/en/configuration/access-control/). Otherwise, your UI and API is available to anyone who can access your IP address.
+> **Note:** We recommend configuring [access control](http://rancher.com/docs/rancher/v1.6/en/configuration/access-control/). Otherwise, your UI and API is available to anyone who can access your IP address.
 
 ### To Launch Rancher Server:
 
@@ -50,7 +49,7 @@ It only takes one command and a few minutes to install and launch Rancher Server
 2. To access the Rancher UI, go to `http://<SERVER_IP>:8080`, replacing `<SERVER_IP>` with the IP address of your host. The UI displays a Welcome to Rancher message.
 
    > **Note:** If you are running your browser on the same host running Rancher Server, you will need to use the host’s real IP address, such as `http://192.168.1.100:8080,` and not `http://localhost:8080` or `http://127.0.0.1:8080`.
-
+   
 3. Click **Got It**. The Rancher UI displays.
 
 ## Creating a Kubernetes Environment in Rancher
