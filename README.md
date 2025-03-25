@@ -21,8 +21,8 @@ In Google Slides (similar to Adobe PowerPoint), I created this training presenta
 
 ## Quick Start for Cloud Container Software
 
- *Link coming soon.*
- 
+[Quick Start Guide for Using Kubernetes with Rancher](https://github.com/rcoonley/Documentation-Samples/blob/c91e7b4b78e6c8e0c975b693e2c803206ed2643f/K8s-Quick-Start.md)
+
 I had cloud computing knowledge, but quickly learned cloud container software (Docker and Kubernetes) and created this user guide within two weeks for Rancher's cloud container software product. I wrote it in Markdown in GitHub.
 
 ## Software Evaluation Guide for Cloud Container Software & Edge Hardware
