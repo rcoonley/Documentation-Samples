@@ -25,10 +25,10 @@ In Google Slides (similar to Adobe PowerPoint), I created this training presenta
 
 I had cloud computing knowledge, but quickly learned cloud container software (Docker and Kubernetes) and created this user guide within two weeks for Rancher's cloud container software product. I wrote it in Markdown in GitHub.
 
-## Software Evaluation Guide for Cloud Container Software & Edge Hardware
+## User Guide for Cloud Container Software & Edge Hardware
 
- *Link coming soon.*
+ [Setting up a Local Portal](https://drive.google.com/file/d/1zi6l_N803PCn43AaTpEgzCfvHMivguh5/view?usp=drivesdk)
  
-I created this Siemens user guide to help developers try out the new global portal. It walks users through installing Kubernetes Edge IoT Core appliance software, onboarding devices, creating a single-node cluster, and installing a Local Portal app and System apps. Note that this is a draft and not the final version.
+I created this Siemens user guide to help developers try out the new global portal. It walks users through installing Kubernetes Edge IoT Core appliance software, onboarding devices, creating a single-node cluster, and installing a Local Portal app and System apps.
 
 
